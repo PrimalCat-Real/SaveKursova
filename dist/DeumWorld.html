@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'DeumWorld.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iRGV1bVdvcmxkLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkRldW1Xb3JsZDwvdGl0bGU+DQogICAgPHZlbmRvcj5QcmltYWxDYXQ8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDxzaG9ydGN1dD48ZGVza3RvcC8+PC9zaG9ydGN1dD4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJEZXVtV29ybGQuamFyIiBzaXplPSI0NzY0NzYyIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcc25ha2V5YW1sLTEuMzAuamFyIiBzaXplPSIzMzE2MDUiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJkZXVtd29ybGQuTWFpbiIgIG5hbWU9IkRldW1Xb3JsZCIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbeddeumworld() {
+        dtjava.embed(
+            {
+                id : 'deumworld',
+                url : 'DeumWorld.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iRGV1bVdvcmxkLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkRldW1Xb3JsZDwvdGl0bGU+DQogICAgPHZlbmRvcj5QcmltYWxDYXQ8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDxzaG9ydGN1dD48ZGVza3RvcC8+PC9zaG9ydGN1dD4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJEZXVtV29ybGQuamFyIiBzaXplPSI0NzY0NzYyIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcc25ha2V5YW1sLTEuMzAuamFyIiBzaXplPSIzMzE2MDUiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJkZXVtd29ybGQuTWFpbiIgIG5hbWU9IkRldW1Xb3JsZCIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbeddeumworld);
+</script>
+
+</head><body>
+<h2>Test page for <b>DeumWorld</b></h2>
+  <b>Webstart:</b> <a href='DeumWorld.jnlp' onclick="return launchApplication('DeumWorld.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
