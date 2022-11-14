@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'RadioCanada-Regular';
-    src: url('./fonts/RadioCanada-Regular.ttf');
+    src: url('../../fonts/RadioCanada-Regular.ttf');
 }
 @font-face {
     font-family: 'RadioCanada-Medium';
-    src: url('./fonts/RadioCanada-Medium.ttf');
+    src: url('../../fonts/RadioCanada-Medium.ttf');
 }
 
 .scroll-pane > .viewport {

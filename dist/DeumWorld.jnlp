@@ -9,7 +9,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="DeumWorld.jar" size="4764762" download="eager" />
+    <jar href="DeumWorld.jar" size="4766816" download="eager" />
     <jar href="lib\snakeyaml-1.30.jar" size="331605" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="deumworld.Main"  name="DeumWorld" />
